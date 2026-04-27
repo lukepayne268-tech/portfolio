@@ -30,6 +30,21 @@ color: #184f63; /*dark-blue*/}
     background-color: #dbdcde; /*light grey*/
 }
 
+#portfolio .card-title {
+    color: #1f7798; /*mid-blue*/
+    font-size: 1.2rem;
+
+}
+
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798; /*mid-blue*/
+    
+}
+
+#portfolio .card-text {
+    min-height: 120px;
+}
+
 /*Contact section*/
 #contact {
     background-color: white;
@@ -44,4 +59,14 @@ color: #184f63; /*dark-blue*/}
     padding: 5% 7% 5% 7%;
     background-position: 50% 70%;
     
+}
+/*media queries*/
+
+/*Use bootstrap breakpoint for XL screens */
+
+@media screen and (min-width: 1200px) {
+    /*fixes all portfolio cards being too tall on XL screens */
+    #portfolio .card-text {
+        min-height: auto;
+    }
 }
