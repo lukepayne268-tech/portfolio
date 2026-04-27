@@ -35,7 +35,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">about</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -71,6 +71,16 @@
           </p>
           <!-- mb-5 gives extra margin spacing under lead text -->
           <p class="lead mb-5">Let's create something amazing together!</p>
+
+          <!--Button trigger modal-->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#subscribeModal"
+          >
+            Subscribe to my newsletter!
+          </button>
         </div>
       </section>
     </header>
@@ -230,7 +240,7 @@
             <div class="col-lg-4">
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" />
-            </div>            
+            </div>
             <div class="col-12">
               <div class="message">
                 <label for="message" class="form-label">Message</label>
@@ -238,12 +248,58 @@
               </div>
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">Send</button>
             </div>
           </form>
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="subscribeModal"
+      tabindex="-1"
+      aria-labelledby="subscribeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="subscribeModalLabel">Subscribe</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+                Join my newsletter for the latest updates on my projects, coding
+                tips, and industry insights delivered straight to your inbox.
+            </p>
+            <form class="row g-3">
+              
+              <div class="col-lg-6">
+                <label for="full-name-modal" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="full-name-modal" />
+              </div>
+              <div class="col-lg-6">
+                <label for="email-modal" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email-modal" />
+              </div>
+              <div class="col-12 mb-4">
+                <button type="submit" class="btn btn-primary">Sign up!</button>
+              </div>
+              
+            </form>
+           
+          </div>
+          
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script
