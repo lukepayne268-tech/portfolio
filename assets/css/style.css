@@ -19,6 +19,10 @@ h1,
 h2 {font-family: 'DM Serif Display', serif;
 color: #184f63; /*dark-blue*/}
 
+.sharp-corners,
+.sharp-corners * {
+    border-radius: 0;
+}
 /*About section*/
 
 #about {
@@ -60,6 +64,7 @@ color: #184f63; /*dark-blue*/}
     background-position: 50% 70%;
     
 }
+
 /*media queries*/
 
 /*Use bootstrap breakpoint for XL screens */
